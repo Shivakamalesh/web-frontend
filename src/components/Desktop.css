@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white; /* Ensure default text color is white */
+}
+
+/* Ensure all headings are visible */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+h2 {
+  color: #FFD700; /* Gold color */
+  padding: 15px;
+}
+
+/* Desktop Homepage Container */
+.desktop-homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black; /* Ensures background is black */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Image Container */
+.desktop-image-container {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.desktop-homepage-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Content Container */
+.desktop-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  background-color: black; /* Ensuring dark background for contrast */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Title Styling */
+.desktop-homepage-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.desktop-homepage-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white !important; /* Ensure text remains white */
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.desktop-button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.desktop-learn-more-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.desktop-learn-more-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .desktop-homepage-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .desktop-image-container {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .desktop-content-container {
+    padding-left: 0;
+  }
+
+  .desktop-homepage-title {
+    font-size: 28px;
+  }
+
+  .desktop-homepage-text {
+    font-size: 14px;
+  }
+
+  .desktop-learn-more-button {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .desktop-homepage-container {
+    padding: 15px;
+  }
+
+  .desktop-homepage-title {
+    font-size: 24px;
+  }
+
+  .desktop-homepage-text {
+    font-size: 12px;
+  }
+
+  .desktop-learn-more-button {
+    padding: 10px 20px;
+  }
+}

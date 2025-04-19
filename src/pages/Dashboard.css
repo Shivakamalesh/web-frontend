@@ -1,0 +1,56 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure scrolling is enabled */
+html, body {
+    width: 100%;
+    min-height: 100vh; /* Allow content to expand */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #121212; /* Dark theme background */
+    color: white; /* Default text color */
+}
+
+/* Container for TradingView widget */
+.tradingview-widget-container {
+    width: 100%;
+    min-height: 100vh; /* Allow content to expand */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* TradingView widget box */
+#tradingview-widget {
+    width: 100%;
+    max-width: 1200px; /* Set max width */
+    height: 500px; /* Fixed height for scrolling */
+    border: 1px solid #333; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #1e1e1e; /* Slightly different dark background */
+    overflow: hidden;
+}
+
+/* Copyright / footer section */
+.tradingview-widget-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tradingview-widget-copyright a {
+    color: #1e90ff; /* Light blue for links */
+    text-decoration: none;
+}
+
+.tradingview-widget-copyright a:hover {
+    text-decoration: underline;
+}
+    

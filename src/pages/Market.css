@@ -1,0 +1,86 @@
+/* Overall Page Styling */
+.market-page {
+  min-height: 100vh;
+  background-image: url("/src/assets/Market.png"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  padding: 2rem;
+}
+  
+.market-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.market-title:hover {
+  color: #FFD700;
+}
+
+/* Grid Layout */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.market-card {
+  background-color: gray;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Currency Pair Title */
+.market-pair {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black !important;
+  margin-bottom: 1rem;
+}
+
+/* Graph Container */
+.market-graph {
+  background-color: black;
+  height: 400px; 
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  overflow: hidden; 
+}
+
+/* Description */
+.market-description {
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.market-button {
+  background-color: #FFD700;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.market-button:hover {
+  background-color: #f0eac6;
+}

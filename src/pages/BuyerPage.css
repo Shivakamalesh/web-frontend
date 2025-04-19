@@ -1,0 +1,91 @@
+.buyer-page {
+  min-height: 100vh;
+  background-image: url("/src/assets/5.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Global Paragraph Styling */
+p {
+  color: black !important;
+}
+
+.forex-card p {
+  color: black !important;
+}
+
+/* Forex Card Styling */
+.forex-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forex-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 215, 0, 0.3);
+}
+
+/* Forex Market Header */
+.buyer-header h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+}
+
+/* Forex Grid */
+.forex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Buttons Container */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Button Styling */
+.buy-button,
+.sell-button,
+.details-button {
+  background-color: #FFD700;
+  color: black;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.buy-button:hover,
+.sell-button:hover,
+.details-button:hover {
+  background-color: #f0eac6;
+  transform: scale(1.05);
+}
+
+/* Ensure buttons are responsive */
+@media (max-width: 600px) {
+  .button-group {
+      flex-direction: column;
+      align-items: center;
+  }
+}

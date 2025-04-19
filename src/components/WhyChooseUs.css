@@ -1,0 +1,87 @@
+.why-choose-us {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url("/src/assets/2.png") center/cover no-repeat;
+    color: #fff;
+  }
+  /* Global paragraph color update */
+.why-choose-us p {
+  color: white !important; /* Force all <p> elements to be white */
+}
+
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700; 
+    text-transform: uppercase;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  /* Feature Cards */
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature-card p{
+    color: white;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.5);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* CTA Button */
+  .cta-container {
+    margin-top: 2rem;
+  }
+  
+  .cta-button {
+    background: #ffd700;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #f0e68c;
+  }
+  

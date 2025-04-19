@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: white;
+}
+
+/* Section Styling */
+.how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+  background: #0a0a0a;
+}
+
+/* Section Heading */
+.how-it-works h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* Ensuring all paragraphs are white */
+.how-it-works p,
+.step p,
+.step-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  color: white !important; /* Ensures text remains white */
+}
+
+/* Steps Container */
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Step Box */
+.step {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+/* Step Image */
+.step img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+/* Step Title */
+.step h3 {
+  font-size: 1.4rem;
+  color: #ffd700;
+}
+
+/* Step Subtitle */
+.step h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Advanced Trading Method Section */
+.advanced-method {
+  margin-top: 50px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Advanced Method Heading */
+.advanced-method h2 {
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Individual Method Step */
+.method-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Step Numbering */
+.step-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin-right: 15px;
+}
+
+/* Step Content Title */
+.step-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Step Content Paragraph */
+.step-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: white !important;
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background: #ffd700;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background: #e6c300;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 90%;
+  }
+
+  .advanced-method {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 30px 10px;
+  }
+
+  .how-it-works h2 {
+    font-size: 1.6rem;
+  }
+
+  .step h3 {
+    font-size: 1.2rem;
+  }
+
+  .step h4 {
+    font-size: 1rem;
+  }
+
+  .step-content h4 {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

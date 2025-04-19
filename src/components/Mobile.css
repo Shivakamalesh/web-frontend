@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white; /* Default text color */
+}
+
+/* Ensure all headings are visible */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* Homepage Container */
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  background-color: black; /* Ensures the container has a dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.homepage-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Content Container */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  background-color: black; /* Ensuring dark background for contrast */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Title Styling */
+.homepage-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.homepage-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white !important; /* Ensures text stays white */
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.learn-more-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-container {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .content-container {
+    padding-left: 0;
+  }
+
+  .homepage-title {
+    font-size: 28px;
+  }
+
+  .homepage-text {
+    font-size: 14px;
+  }
+
+  .learn-more-button {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-container {
+    padding: 15px;
+  }
+
+  .homepage-title {
+    font-size: 24px;
+  }
+
+  .homepage-text {
+    font-size: 12px;
+  }
+
+  .learn-more-button {
+    padding: 10px 20px;
+  }
+}

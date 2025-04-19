@@ -1,0 +1,222 @@
+/* Calendar Container */
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  color: black; /* Default text color */
+}
+
+/* Sidebar styles */
+.calendar-sidebar {
+  width: 25%;
+  background: #333; /* Dark gray sidebar */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.calendar-sidebar .navigation a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.calendar-sidebar .navigation a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* React Calendar styles */
+.react-calendar {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.react-calendar__month-view__days__day {
+  color: black;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: red; /* Highlight weekend dates in red */
+}
+
+.react-calendar__tile--active {
+  background-color: #e94560 !important;
+  color: white !important;
+}
+
+.react-calendar__navigation button {
+  color: red !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Event List Styles */
+.event-list {
+  width: 70%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-list h2 {
+  margin-bottom: 15px;
+  color: #333; /* Dark gray text */
+  text-align: center;
+}
+
+/* Event Table */
+.event-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.event-list table th,
+.event-list table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.event-list table th {
+  background-color: #007bff; /* Blue header */
+  color: whitesmoke;
+}
+
+.event-list table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.event-list table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Impact Level Colors */
+.impact-high td {
+  background-color: #ff4d4d !important;
+  color: white !important;
+}
+
+.impact-moderate td {
+  background-color: #ffa500 !important;
+  color: black !important;
+}
+
+.impact-average td {
+  background-color: #ffff00 !important;
+  color: black !important;
+}
+
+/* Legend Styles */
+.impact-legend {
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.impact-legend p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.legend-high {
+  color: white;
+  background-color: #ff4d4d;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.legend-moderate {
+  color: black;
+  background-color: #ffa500;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.legend-average {
+  color: black;
+  background-color: #ffff00;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .calendar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calendar-sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .event-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-sidebar {
+    padding: 15px;
+  }
+
+  .event-list table th,
+  .event-list table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .react-calendar__navigation button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-sidebar {
+    padding: 10px;
+  }
+
+  .calendar-sidebar .navigation a {
+    font-size: 14px;
+  }
+
+  .event-list h2 {
+    font-size: 18px;
+  }
+
+  .event-list table {
+    font-size: 12px;
+  }
+
+  .event-list table th,
+  .event-list table td {
+    padding: 5px;
+  }
+
+  .impact-legend p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+

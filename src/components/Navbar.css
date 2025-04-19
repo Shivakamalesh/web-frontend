@@ -1,0 +1,233 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #090910;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 45px; 
+  width: auto;  
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Left */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #e94560;
+  transition: color 0.3s ease-in-out;
+}
+
+.team-name:hover {
+  color: #FFD700;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin: 0 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #FFD700;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clock {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFD700;
+  margin-right: 20px;
+}
+
+/* Buttons */
+.wallet-btn,
+.auth-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #FFD700;
+  padding: 6px 15px;
+  margin-left: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.wallet-btn:hover,
+.auth-btn:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 15px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wallet-btn,
+  .auth-btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .team-name {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wallet-btn,
+  .auth-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .clock {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .team-name {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .wallet-btn,
+  .auth-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .clock {
+    font-size: 12px;
+    margin-right: 0;
+  }
+}
