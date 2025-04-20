@@ -24,7 +24,7 @@ const handleDealersignup= async (e) => {
       email,
   };  
   try {  
-      await fetch("http://localhost:8000/api/admin/signup", {  
+      await fetch("https://web-backend-vtx9.onrender.com/api/admin/signup", {  
           method: "POST",  
           headers: {  
               "Content-Type": "application/json"  
