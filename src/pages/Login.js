@@ -17,7 +17,7 @@ const handleDealerlogin = async (e) => {
       password 
   };  
   try {  
-      await fetch("http://localhost:8000/api/admin/login", {  
+      await fetch("https://web-backend-vtx9.onrender.com/api/admin/login", {  
           method: "POST",  
           headers: {  
               "Content-Type": "application/json"  
