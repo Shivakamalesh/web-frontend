@@ -4,8 +4,8 @@ import "./NewsFeed.css";
 
 const NewsFeed = () => {
   const [articles, setArticles] = useState([]);
-  const API_KEY = "48b5f2b7023f46d5b8d2fd35fcbc68db";
-  const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+  const API_KEY = "Your key";
+  const URL = `Your link`;
 
   useEffect(() => {
     const fetchNews = async () => {
